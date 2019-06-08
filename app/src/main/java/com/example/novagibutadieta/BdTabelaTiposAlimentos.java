@@ -4,6 +4,11 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class BdTabelaTiposAlimentos {
 
+    public static final String NOME_TABELA = "TiposAlimentos";
+    public static final String CAMPO_DESCRICAO = "descricao";
+    public static final String CAMPO_VALOR = "campo_valor";
+
+
     private SQLiteDatabase db;
 
     public BdTabelaTiposAlimentos(SQLiteDatabase db) {
@@ -13,10 +18,10 @@ public class BdTabelaTiposAlimentos {
     public void cria() {
 
         db.execSQL(
-                "CREATE TABLE categorias(" +
-                        "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "descricao TEXT NOT NULL," +
-                        "campo_valor TEXT NOT NULL" +
+                "CREATE TABLE NOME_TABELA(" +
+                        "_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                        "CAMPO_DESCRICAO TEXT NOT NULL," +
+                        "CAMPO_VALOR TEXT NOT NULL" +
                         ")"
         );
     }
