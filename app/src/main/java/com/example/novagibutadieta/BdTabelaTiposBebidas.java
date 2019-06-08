@@ -10,4 +10,7 @@ public class BdTabelaTiposBebidas implements BaseColumns {
     public BdTabelaTiposBebidas(SQLiteDatabase db) {
         this.db = db;
     }
+
+    public void cria() {
+    }
 }

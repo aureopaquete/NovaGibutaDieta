@@ -9,4 +9,7 @@ public class BdTabelaTiposAlimentos {
     public BdTabelaTiposAlimentos(SQLiteDatabase db) {
         this.db = db;
     }
+
+    public void cria() {
+    }
 }
