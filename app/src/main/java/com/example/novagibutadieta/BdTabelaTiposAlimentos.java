@@ -11,5 +11,13 @@ public class BdTabelaTiposAlimentos {
     }
 
     public void cria() {
+
+        db.execSQL(
+                "CREATE TABLE categorias(" +
+                        "_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                        "descricao TEXT NOT NULL," +
+                        "campo_valor TEXT NOT NULL" +
+                        ")"
+        );
     }
 }
